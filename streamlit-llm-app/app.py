@@ -6,6 +6,8 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain 
 from langchain.chat_models import ChatOpenAI
 
+api_key = st.secrets["OPENAI_API_KEY"]
+
 # Webアプリの概要や操作方法をユーザーに明示するためのテキストを表示
 st.markdown("""
 ### アプリの概要
